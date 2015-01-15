@@ -10,6 +10,7 @@
     var qread = function(image, callback){
         var imgMatrix = new preProcess(image);
         var patternInfo = new FindPattern(imgMatrix).find();
+        if(!patternInfo)return callback();
         var qrMatrix = new Detector(imgMatrix, patternInfo).process();
         new Decode(qrMatrix, callback).process();
     }

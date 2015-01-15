@@ -12,7 +12,9 @@
     "dependencies": {},
     "devDependencies": {
         "grunt": "~0.4.1",
-        "grunt-contrib-qunit": "*"
+        "grunt-contrib-qunit": "*",
+        "get-pixels":">=3.1.0",
+        "image-size":">=0.3.5"
     },
     "repository": {
         "type": "git",

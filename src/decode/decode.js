@@ -122,7 +122,7 @@
 
             //将读取的codeword整理到每个ECblock中进行纠错
             this.dataBlocks = this.getDataBlocks();
-            console.log(this.dataBlocks);
+            // console.log(this.dataBlocks);
 
             //纠错
             //最无奈的过程 看不懂GF256
@@ -216,8 +216,8 @@
             for (y = dimension - 7; y <= dimension - 1; y++, bitIndex++) {
                 maskedFormatInfo2 += this.bitMatrix.get(8, y) << bitIndex;
             }
-            console.log(maskedFormatInfo1.toString(2));
-            console.log(maskedFormatInfo2.toString(2));
+            // console.log(maskedFormatInfo1.toString(2));
+            // console.log(maskedFormatInfo2.toString(2));
             //从编码后的格式信息列表中寻找一样的格式信息
             var bestFormatInfo, bestDifference;
             for (var i = 0, targetFormatInfo; targetFormatInfo = Decode.FORMATINFO[i]; i++) {
@@ -356,7 +356,7 @@
             if (this.totalCodeWord != byteIndex) {
                 throw 'readCodewords : ' + byteIndex + ' != totalcodeWords';
             }
-            console.log(codeWord)
+            // console.log(codeWord)
             return codeWord;
         },
 

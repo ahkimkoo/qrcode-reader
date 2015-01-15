@@ -2,7 +2,7 @@
     if (typeof define == 'function') define(definition);
     else if (typeof module != 'undefined') module.exports = definition(require, module.exports, module);
 })(function (require, exports, module) {
-    var BitMatrix = require('bitMatrix');
+    var BitMatrix = require('./bitMatrix');
     //预处理
     var preProcess = function (image) {
         this.bitMatrix = new BitMatrix(image.width, image.height);

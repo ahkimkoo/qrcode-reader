@@ -81,7 +81,7 @@
             }
 
             if (this.patterns.length < 3) {
-                throw 'pattern no find';
+                return null;
             } else {
                 //有多个图形的 选择最合适的
                 this.findBestPatterns();
